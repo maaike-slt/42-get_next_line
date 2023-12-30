@@ -6,7 +6,7 @@
 /*   By: msloot <msloot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/23 12:40:27 by msloot            #+#    #+#             */
-/*   Updated: 2023/12/30 16:55:54 by msloot           ###   ########.fr       */
+/*   Updated: 2023/12/30 19:08:14 by msloot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +68,13 @@ static char	*find_line(char *buffer, int fd)
 		}
 		else
 		{
-	// 	- put buffer in line (strjoin)
-	//  - read buffer
+			line = ft_strjoin_free(line, buffer, true, false);
+			if (!line)
+				return (NULL);
+			n_bytes = read(fd, buffer, BUFFER_SIZE);
 		}
 	}
+	// we shall free the buffer (and maybe probably some line;))
 }
 
 char	*get_next_line(int fd)

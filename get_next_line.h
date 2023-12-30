@@ -6,7 +6,7 @@
 /*   By: msloot <msloot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 14:56:09 by msloot            #+#    #+#             */
-/*   Updated: 2023/12/30 16:13:21 by msloot           ###   ########.fr       */
+/*   Updated: 2023/12/30 19:00:22 by msloot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@
 # include <stdbool.h>
 
 char	*get_next_line(int fd);
+
+char	*ft_strjoin_free(char *s1, char *s2, bool free_s1, bool free_s2);
 
 #endif
