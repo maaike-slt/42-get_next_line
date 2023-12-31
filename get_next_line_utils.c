@@ -6,7 +6,7 @@
 /*   By: msloot <msloot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 18:51:33 by msloot            #+#    #+#             */
-/*   Updated: 2023/12/30 19:00:10 by msloot           ###   ########.fr       */
+/*   Updated: 2023/12/31 15:10:48 by msloot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static char	*ft_strcat(char *dest, const char *src)
 	return (dest);
 }
 
-static char	*ft_strcpy(char *dest, const char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	size_t	i;
 
